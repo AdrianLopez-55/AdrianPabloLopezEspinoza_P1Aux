@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea2</title>
+</head>
+<body onload="actualizar()">
+    <h1>Pregunta 1</h1>
+    <p>script que pida la edad y si es mayor de 18 años indica que ya puede conducir</p>
+    <label>introduce tu edad</label>
+    <input type="number" id="a" min="0" max="100">
+    <button onclick="permisoCon()">Comrpbar</button>
+
+    <hr>
+    <h1>Pregunta 3</h1>
+    <p>script que pida por teclado 3 edades y 3 nombres e indique el nombre del mayor</p>
+    <label>Ingrese 3 nombres: </label>
+    <label>Nombre 1: </label><input type="text" id="name1">
+    <label>Nombre 2: </label><input type="text" id="name2">
+    <label>Nombre 3: </label><input type="text" id="name3">
+    <br>
+    <label>Ingrese 3 edades: </label>
+    <label>edad 1: </label><input type="number" id="number1">
+    <label>edad 2: </label><input type="number" id="number2">
+    <label>edad 3: </label><input type="number" id="number3">
+    <button onclick="comparar()">comparar</button>
+
+    <hr>
+    <h1>Pregunta 4</h1>
+    <p>Genera 3 números aleatorios entre 1 y 99 pero que no se repita ninguno</p>
+    <button onclick="generar()">Generar numeros aleatorios</button>
+
+    <hr>
+    <h1>Pregunta 5</h1>
+    <p>script que cuente el número de vocales que tiene un texto</p>
+    <label>Introduce texto</label>
+    <input type="text" id="cadena">
+    <button onclick="qq()">contar</button>
+
+    <hr>
+    <h1>Pregunta 6</h1>
+    <p>Pedimos una cadena de texto que sabemos que puede contener paréntesis. Realiza un script que extraiga la cadena que se encuentra entre los paréntesis. Ejemplo: Si escribimoe el texto “Hola (que) tal” se mostrará “que”. Si no existe el signo “(“ mostrará una cadena vacía y si existe el signo “(“pero no el signo “)” mostrará desde el primer paréntesis hasta el final</p>
+    <label>Introduce texto</label>
+    <input type="text" id="cad">
+    <button onclick="p6()">Extraer cadena</button>
+
+    <hr>
+    <h1>Pregunta 7</h1>
+    <p>script que pida una cadena de texto y la devuelva al revés</p>
+    <label>Introducir texto</label>
+    <input type="text" id="rev">
+    <button onclick="p7()">revez</button>
+
+    <hr>
+    <h1>Pregunta 8</h1>
+    <p>script que muestre la serie de fibonacci hasta un número entre 1 y 100 pedido por teclado</p>
+    <label>Introducir numero</label>
+    <input type="number" id="fibo">
+    <button onclick="p8()">mostrar</button>
+
+    <hr>
+    <h1>Pregunta 9</h1>
+    <p>juego de Piedra Papel Tijera contra el Pc</p>
+    <label>Juego: Escribe piedra, papel o tijera</label>
+    <input type="text" id="game">
+    <button onclick="p9()">Jugar</button>
+
+    <hr>
+    <h1>Pregunta 10</h1>
+    <p>función que reciba 2 parámetros, precio e iva, y devuelva el precio con iva incluido. Si no recibe el iva, aplicará el 21 por ciento por defecto.</p>
+    <label>Ejercicio</label><br>
+    <label>Introducir precio</label>
+    <input type="number" id="prec">
+    <label>Introducir IVA</label>
+    <input type="number" id="iva">
+    <button onclick="p10()">Calcular</button>
+
+    <hr>
+    <h1>Pregunta 12</h1>
+    <p>script que muestre un reloj en pantalla con fecha y hora y que se actualice cada segundo</p>
+    <div id="capa0"> </div>
+
+    <hr>
+    <h1>Pregunta 13</h1>
+    <p>función que dada una fecha valida determine cuantos años han pasado hasta el día de hoy</p>
+    <label>Formato:</label>
+    <label>anio,mes.dia</label>
+    <label>EJEMPLO: 1990,4,23</label>
+    <input type="text" id="time">
+    <button onclick="p13()">Mostrar fecha diferencia</button>
+
+    <hr>
+    <h1>Pregunta 14</h1>
+    <p>función que dada una cadena de texto cuente el numero de vocales y consonantes</p>
+    <label>Introduce texto</label>
+    <input type="text" id="tt">
+    <button onclick="p14()">contar</button>
+
+    <hr>
+    <h1>Pregunta 15</h1>
+    <p>función que valide que un texto sea un nombre valido</p>
+    <label>Introduzca nombre</label>
+    <input type="text" id="nomb">
+    <label>Intriduzca apellido</label>
+    <input type="text" id="ape">
+    <button onclick="p15()">Validar</button>
+
+    <hr>
+    <h1>Pregunta 16</h1>
+    <p>Programa una función que dado un arreglo de elementos, elimine los duplicados</p>
+    <label>Introduzca arreglo</label>
+    <label>Ejemplo</label>
+    <label>xyxxy124</label>
+    <label>Lo cual significa [x, y, x, x, y, 1, 2, 4]</label>
+    <input type="text" id="arreg">
+    <button onclick="p16()">Eliminar repetidos</button>
+    
+</body>
+<script src="./solutionQuestion.js"></script>
+</html>
